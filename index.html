@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Travel Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <section class="showcase  ">
+      <header>
+        <h2 class="logo">Travel</h2>
+        <div class="toggle "></div>
+      </header>
+
+      <video src="videoplayback.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never stop</h2>
+        <h3>Exploring the world</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+          officia. Quasi natus necessitatibus possimus id maiores incidunt eius
+          dolorum voluptatem?
+        </p>
+
+        <a href="#">Explore</a>
+      </div>
+
+      <ul class="social">
+        <li> <a href="#"><img src="./img/facebook.png" alt="" /></a></li>
+        <li><a href="#"><img src="./img/twitter.png" alt="" /></a></li>
+        <li><a href="#"><img src="./img/instagram.png" alt="" /></a></li>
+      </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+
+        </ul>
+    </div>
+
+    </section>
+
+    
+  <script>
+      const menuToggle=document.querySelector('.toggle');
+      const showcase=document.querySelector('.showcase')
+
+      menuToggle.addEventListener('click',()=>{
+          menuToggle.classList.toggle('active');
+          showcase.classList.toggle('active')
+
+      })
+
+  </script>
+  </body>
+</html>
